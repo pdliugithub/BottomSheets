@@ -33,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Bottom navigate
+     *
+     * @param view view
+     */
+    public void bottomNavigate(View view) {
+        startActivity(new Intent(this, BottomNavigationActivity.class));
+    }
+
+    /**
      * bottom sheet dialog.
      *
      * @param view view.

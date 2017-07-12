@@ -33,16 +33,18 @@ public class BottomSheetActivity extends AppCompatActivity {
          */
         mToast = Toast.makeText(this, "", Toast.LENGTH_SHORT);
         control();
-    }
 
-
-    public void floatBtn(View view){
-        int state = behavior.getState();
-        if(state == BottomSheetBehavior.STATE_COLLAPSED){
-            behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
-        }else{
-            behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-        }
+        findViewById(R.id.floatBtn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int state = behavior.getState();
+                if (state == BottomSheetBehavior.STATE_COLLAPSED) {
+                    behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+                } else {
+                    behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                }
+            }
+        });
     }
 
     private void control() {
@@ -56,7 +58,7 @@ public class BottomSheetActivity extends AppCompatActivity {
         behavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
-                if(mToast != null){
+                if (mToast != null) {
                     mToast.setText("改变了");
                     mToast.show();
                 }
@@ -64,7 +66,7 @@ public class BottomSheetActivity extends AppCompatActivity {
 
             @Override
             public void onSlide(@NonNull View bottomSheet, float slideOffset) {
-                if(mToast != null){
+                if (mToast != null) {
                     mToast.setText("slide");
                     mToast.show();
                 }

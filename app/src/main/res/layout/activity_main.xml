@@ -28,4 +28,11 @@
         android:text="Bottom_Sheet_Fragment"
         android:textAllCaps="false" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="bottomNavigate"
+        android:text="Bottom_Navigate_Bar"
+        android:textAllCaps="false" />
+
 </LinearLayout>
