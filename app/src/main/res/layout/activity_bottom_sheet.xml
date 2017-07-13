@@ -13,10 +13,7 @@
         android:layout_height="wrap_content"
         app:behavior_hideable="false"
         app:behavior_peekHeight="50dp"
-        app:layout_behavior="@string/bottom_sheet_behavior"
-        android:fitsSystemWindows="true"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_behavior="@string/bottom_sheet_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -60,12 +57,18 @@
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatBtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_anchorGravity="bottom|end"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_anchor="@id/bottom_sheet"
-        app:srcCompat= "@android:drawable/ic_input_add" />
+        app:layout_anchorGravity="top|right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

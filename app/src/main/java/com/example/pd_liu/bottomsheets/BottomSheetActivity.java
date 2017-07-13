@@ -34,7 +34,7 @@ public class BottomSheetActivity extends AppCompatActivity {
         mToast = Toast.makeText(this, "", Toast.LENGTH_SHORT);
         control();
 
-        findViewById(R.id.floatBtn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.primary).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int state = behavior.getState();
