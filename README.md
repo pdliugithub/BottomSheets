@@ -2,7 +2,7 @@
 BottomSheets.
 # Subsequent updates....
 
-# Add
+# Update
 ## BottomSheet with moving Floating action buttons
 
 # 效果图
