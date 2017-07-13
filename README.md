@@ -2,8 +2,8 @@
 BottomSheets.
 # Subsequent updates....
 
-#Add
-##BottomSheet with moving Floating action buttons
+# Add
+## BottomSheet with moving Floating action buttons
 
-#Screen logo
-  ![alt](https://github.com/pdliugithub/BottomSheets/blob/master/art/fff.gif)
+# 效果图
+  ![alt](https://github.com/pdliugithub/BottomSheets/blob/master/art/fff.gif)
