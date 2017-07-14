@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.pd_liu.bottomsheets.fragment.BottomSheetFragment;
+
 /**
  * BottomSheets Sample.
  */
@@ -55,12 +57,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * bottom sheet fragment.
+     * bottom sheet dialog fragment.
      *
      * @param view view.
      */
     public void bottomSheetFragment(View view) {
-//        BottomSheetDialogFragment bottomSheetDialog = new BottomSheetDialogFragment();
-//        bottomSheetDialog.sho
+        BottomSheetFragment bottomSheetFragment = new BottomSheetFragment();
+        bottomSheetFragment.show(getSupportFragmentManager(), BottomSheetFragment.class.getSimpleName());
     }
 }

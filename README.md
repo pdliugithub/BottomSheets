@@ -7,3 +7,4 @@ BottomSheets.
 
 # 效果图
   ![alt](https://github.com/pdliugithub/BottomSheets/blob/master/art/screen.gif)
+   ![alt](https://github.com/pdliugithub/BottomSheets/blob/master/art/add_fragment.gif)
